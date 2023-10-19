@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--Hansel Pérez_100323660-->
+<html>
+
+<head>
+    <title>Validación de Cédula</title>
+</head>
+
+<body>
+    <center>
+       <h1>Validación de Cédula</h1>
+
+        <form id="cedulaForm">
+            <label for="cedula">Ingrese la Cedula:</label>
+            <input type="text" id="cedula" name="cedula" required>
+            <button type="button" onclick="validarCedula()">Validar</button>
+            <p id="resultado"></p>
+        </form>
+
+
+        <script src="validarCedula.js"></script>
+
+        <!--CSS para asignar colores según el resultado-->
+        <style>
+            .válida {
+                color: green;
+            }
+
+            .inválida {
+                color: red;
+            }
+        </style>
+
+    </center>
+</body>
+
+</html>
